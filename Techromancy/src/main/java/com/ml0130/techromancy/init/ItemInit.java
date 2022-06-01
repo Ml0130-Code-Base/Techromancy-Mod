@@ -14,6 +14,16 @@ public class ItemInit {
 	public static final RegistryObject<Item> Solidified_Mana = register("solidified_mana",
 			() -> new Item(new Item.Properties().tab(Techromancy.Techromancy_Tab)));
 	
+	//Tool Registry
+	public static final RegistryObject<Item> Solidified_Mana_Pickaxe = register("solidified_mana_pickaxe",
+			() -> new Item(new Item.Properties().tab(Techromancy.Techromancy_Tab)));
+	public static final RegistryObject<Item> Solidified_Mana_Axe = register("solidified_mana_axe",
+			() -> new Item(new Item.Properties().tab(Techromancy.Techromancy_Tab)));
+	public static final RegistryObject<Item> Solidified_Mana_Sward = register("solidified_mana_sward",
+			() -> new Item(new Item.Properties().tab(Techromancy.Techromancy_Tab)));
+	public static final RegistryObject<Item> Solidified_Mana_Hoe = register("solidified_mana_hoe",
+			() -> new Item(new Item.Properties().tab(Techromancy.Techromancy_Tab)));
+	
 	private static <T extends Item> RegistryObject<T> register(final String name, final Supplier<T> item){
 		return ITEMS.register(name, item);
 	}
