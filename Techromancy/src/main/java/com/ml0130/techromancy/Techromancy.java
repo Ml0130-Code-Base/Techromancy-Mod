@@ -22,7 +22,6 @@ public class Techromancy {
 		@Override
 		@OnlyIn(Dist.CLIENT)
 		public ItemStack makeIcon() {
-			//return new ItemStack(ItemInit.Hex_Gate.get());
 			return new ItemStack(ItemInit.Solidified_Mana.get());
 		}
 	};
