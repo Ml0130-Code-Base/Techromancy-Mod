@@ -1,7 +1,11 @@
 {
-	"item.techromancy.hex_gate": "Hex Gate",
-	""
+	//Loclized Item Names
+	"item.techromancy.solidified_mana": "Solidified Mana",
 	
-	"itemGroup.techromancy": "Techromancy",
+	//Locilzed Block Names
+	"block.techromancy.Hex_Gate": "Hex Gate",
+	
+	//Loclized Creative Tab Name
+	"itemGroup.techromancy": "Techromancy"
 	
 }
