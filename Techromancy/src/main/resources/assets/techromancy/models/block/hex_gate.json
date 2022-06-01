@@ -1,0 +1,7 @@
+{
+	"parent":"block/generated",
+		"textures":{
+			"layer0": "techromancy:block/hex_gate"
+		}
+
+}
