@@ -11,7 +11,7 @@ import net.minecraftforge.registries.RegistryObject;
 public class ItemInit {
 	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Techromancy.MOD_ID);
 
-	//public static final RegistryObject<Item> Hex_Gate = register("hex_gate", () -> new Item(new Item.Properties().tab(Techromancy.Techromancy_Tab)));
+	public static final RegistryObject<Item> Solidified_Mana = register("solidified_mana", () -> new Item(new Item.Properties().tab(Techromancy.Techromancy_Tab)));
 	
 	private static <T extends Item> RegistryObject<T> register(final String name, final Supplier<T> item){
 		return ITEMS.register(name, item);

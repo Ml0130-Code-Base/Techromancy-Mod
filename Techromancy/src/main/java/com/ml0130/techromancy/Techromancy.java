@@ -23,7 +23,7 @@ public class Techromancy {
 		@OnlyIn(Dist.CLIENT)
 		public ItemStack makeIcon() {
 			//return new ItemStack(ItemInit.Hex_Gate.get());
-			return new ItemStack(ItemInit.solitfied_mana.get());
+			return new ItemStack(ItemInit.Solidified_Mana.get());
 		}
 	};
 
