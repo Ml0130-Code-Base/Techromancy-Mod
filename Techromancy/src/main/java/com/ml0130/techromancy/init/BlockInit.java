@@ -9,6 +9,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.material.MaterialColor;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -19,7 +20,8 @@ public class BlockInit {
 	public static final DeferredRegister<Item> ITEMS = ItemInit.ITEMS;
 	
 	public static final RegistryObject<Block> Hex_Gate = register("hex_gate", 
-			() -> new Block(BlockBehaviour.OffsetType
+			() -> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_CYAN)), 
+			object -> () -> new Item(new Item.Properties().tab(Techromancy.Techromancy_Tab)));
 	
 	private static <T extends Block> RegistryObject<T> registerBlock(final String name,
 			final Supplier<? extends T> block) {
@@ -31,5 +33,6 @@ public class BlockInit {
 		RegistryObject<T> obj = registerBlock(name, block);
 		ITEMS.register(name, item.apply(obj));
 		return obj;
+	}
 	
 }
