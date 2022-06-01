@@ -1,5 +1,7 @@
 {
-	"item.techromancy.Hex_Gate": "Hex Gate",
+	"item.techromancy.hex_gate": "Hex Gate",
+	""
+	
 	"itemGroup.techromancy": "Techromancy",
 	
 }
