@@ -1,5 +1,6 @@
 package com.ml0130.techromancy;
 
+import com.ml0130.techromancy.init.BlockInit;
 import com.ml0130.techromancy.init.ItemInit;
 
 import net.minecraft.world.item.CreativeModeTab;
@@ -21,13 +22,15 @@ public class Techromancy {
 		@Override
 		@OnlyIn(Dist.CLIENT)
 		public ItemStack makeIcon() {
-			return new ItemStack(ItemInit.Hex_Gate.get());
+			//return new ItemStack(ItemInit.Hex_Gate.get());
+			return new ItemStack(ItemInit.solitfied_mana.get());
 		}
 	};
 
 	public Techromancy() {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 			ItemInit.ITEMS.register(bus);
+			BlockInit.BLOCKS.register(bus);
 		
 		MinecraftForge.EVENT_BUS.register(this);
 	}
