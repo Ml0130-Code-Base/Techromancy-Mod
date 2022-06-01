@@ -1,0 +1,28 @@
+package com.ml0130.techromancy;
+
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fml.common.Mod;
+
+@Mod("techromancy")
+public class Techromancy {
+	
+	public static final String MOD_ID = "techomancy";
+	
+	public static final CreativeModeTab Techromancy_Tab = new CreativeModeTab(MOD_ID) {
+		
+		@Override
+		@OnlyIn(Dist.CLIENT)
+		public ItemStack makeIcon() {
+			// TODO Auto-generated method stub
+			return null;
+		}
+	};
+
+	public Techromancy() {
+		MinecraftForge.EVENT_BUS.register(this);
+	}
+}

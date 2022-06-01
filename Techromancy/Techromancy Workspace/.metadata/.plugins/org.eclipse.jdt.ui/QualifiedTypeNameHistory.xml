@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="net.minecraftforge.fml.common.Mod"/>
+    <fullyQualifiedTypeName name="net.minecraftforge.common.MinecraftForge"/>
+    <fullyQualifiedTypeName name="net.minecraft.world.item.CreativeModeTab"/>
+    <fullyQualifiedTypeName name="net.minecraftforge.api.distmarker.OnlyIn"/>
+    <fullyQualifiedTypeName name="net.minecraftforge.registries.DeferredRegister"/>
+    <fullyQualifiedTypeName name="net.minecraftforge.registries.ForgeRegistries"/>
+    <fullyQualifiedTypeName name="net.minecraftforge.registries.RegistryBuilder"/>
+    <fullyQualifiedTypeName name="java.util.function.Supplier"/>
+    <fullyQualifiedTypeName name="com.google.common.base.Supplier"/>
+    <fullyQualifiedTypeName name="net.minecraftforge.client.event.ColorHandlerEvent.Item"/>
+    <fullyQualifiedTypeName name="net.minecraft.WorldVersion"/>
+    <fullyQualifiedTypeName name="net.minecraftforge.registries.RegistryObject"/>
+    <fullyQualifiedTypeName name="net.minecraft.world.item.Item"/>
+    <fullyQualifiedTypeName name="net.minecraft.world.item.Item.Properties"/>
+    <fullyQualifiedTypeName name="com.ml0130.techromancy.Techromancy"/>
+    <fullyQualifiedTypeName name="net.minecraft.world.item.ItemStack"/>
+    <fullyQualifiedTypeName name="com.ml0130.techromancy.init.ItemInit"/>
+    <fullyQualifiedTypeName name="net.minecraftforge.eventbus.api.IEventBus"/>
+    <fullyQualifiedTypeName name="net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext"/>
+</qualifiedTypeNameHistroy>

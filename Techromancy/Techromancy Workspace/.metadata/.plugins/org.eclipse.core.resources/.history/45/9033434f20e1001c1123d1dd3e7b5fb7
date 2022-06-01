@@ -1,0 +1,12 @@
+package com.ml0130.techromancy;
+
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fml.common.Mod;
+
+@Mod{"Techromancy"}
+public class Techromancy {
+
+	public Techromancy() {
+		MinecraftForge.EVENT_BUS.register(this);
+	}
+}

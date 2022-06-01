@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion='[39,)
+license="MIT"
+[[mods]]
+modId="techromancy"
+version="${file.jarVersion}"
+displayName="Techromancy"
+logoFile="examplemod.png"
+credits="Credit text"
+authors="ml0130 and Essidies"
+description="TBD"
+
+
+[[dependencies.techromancy]]
+	modId="forge"
+	mandatory=true
+	versionRange="[39,)"
+	ordering="NONE"
+	side="BOTH"
+	
+[[dependencies.techromancy]]
+	modId="minecraft"
+	mandatory=true
+	versionRange="[1.18.1,1.19)"
+	ordering="NONE"
+	side="BOTH"

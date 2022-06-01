@@ -1,0 +1,8 @@
+package com.ml0130.techromancy;
+
+import net.minecraftforge.fml.common.Mod;
+
+@Mod{"Techromancy"}
+public class Techromancy {
+
+}
