@@ -1,8 +1,0 @@
-content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="net.minecraftforge.registries.DeferredRegister"><rhs name\="net.minecraftforge.registries.DeferredRegister"/></lhs><lhs name\="net.minecraft.world.item.Item$Properties"><rhs name\="net.minecraft.world.item.Item$Properties"/></lhs><lhs name\="net.minecraftforge.common.extensions.IForgeItemStack"><rhs name\="net.minecraft.world.item.ItemStack"/></lhs><lhs name\="net.minecraftforge.common.capabilities.ICapabilitySerializable"><rhs name\="net.minecraft.world.item.ItemStack"/></lhs><lhs name\="net.minecraftforge.common.capabilities.ICapabilityProvider"><rhs name\="net.minecraft.world.item.ItemStack"/></lhs><lhs name\="net.minecraftforge.common.util.INBTSerializable"><rhs name\="net.minecraft.world.item.ItemStack"/></lhs><lhs name\="net.minecraftforge.common.capabilities.CapabilityProvider"><rhs name\="net.minecraft.world.item.ItemStack"/></lhs><lhs name\="net.minecraftforge.common.capabilities.ICapabilityProviderImpl"><rhs name\="net.minecraft.world.item.ItemStack"/></lhs></history>
-content_assist_number_of_computers=12
-eclipse.preferences.version=1
-org.eclipse.jdt.ui.formatterprofiles.version=22
-spelling_locale_initialized=true
-typefilter_migrated_2=true
-useAnnotationsPrefPage=true
-useQuickDiffPrefPage=true
