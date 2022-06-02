@@ -1,7 +1,7 @@
 {
-	"parent":"block/generated",
+	"parent":"block/cube_all",
 		"textures":{
-			"layer0": "techromancy:block/hex_gate"
+			"all": "techromancy:block/hex_gate"
 		}
 
 }
