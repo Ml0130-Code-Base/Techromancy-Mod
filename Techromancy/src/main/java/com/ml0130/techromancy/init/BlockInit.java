@@ -19,8 +19,20 @@ public class BlockInit {
 			Techromancy.MOD_ID);
 	public static final DeferredRegister<Item> ITEMS = ItemInit.ITEMS;
 	
+	//Magic Blocks
 	public static final RegistryObject<Block> Hex_Gate = register("hex_gate", 
 			() -> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_CYAN)), 
+			object -> () -> new Item(new Item.Properties().tab(Techromancy.Techromancy_Tab)));
+	public static final RegistryObject<Block> Mystic_Steam_Engine = register("mystic_steam_engine", 
+			() -> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_MAGENTA)), 
+			object -> () -> new Item(new Item.Properties().tab(Techromancy.Techromancy_Tab)));
+	
+	//Steam Blocks
+	public static final RegistryObject<Block> Basic_Steam_Engine = register("basic_steam_engine", 
+			() -> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BROWN)), 
+			object -> () -> new Item(new Item.Properties().tab(Techromancy.Techromancy_Tab)));
+	public static final RegistryObject<Block> Advanced_Steam_Engine = register("advanced_steam_engine", 
+			() -> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_LIGHT_GRAY)), 
 			object -> () -> new Item(new Item.Properties().tab(Techromancy.Techromancy_Tab)));
 	
 	private static <T extends Block> RegistryObject<T> registerBlock(final String name,

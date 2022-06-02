@@ -12,6 +12,9 @@
 	
 	//Locilzed Block Names
 	"block.techromancy.hex_gate": "Hex Gate",
+	"block.techromancy.wooden_steam_engine": "Wooden Steam Engine",
+	"block.techromancy.advanced_steam_engine": "Advanced Steam Engine",
+	"block.techromancy.mystic_steam_engine": "Mystic Steam Engine",
 	
 	//Loclized Creative Tab Name
 	"itemGroup.techromancy": "Techromancy"
