@@ -20,10 +20,10 @@ public class ItemInit {
 			() -> new Item(new Item.Properties().tab(Techromancy.Techromancy_Tab)));
 	public static final RegistryObject<Item> Solidified_Mana_Axe = register("solidified_mana_axe",
 			() -> new Item(new Item.Properties().tab(Techromancy.Techromancy_Tab)));
-	public static final RegistryObject<Item> Solidified_Mana_Sward = register("solidified_mana_sward",
+	public static final RegistryObject<Item> Solidified_Mana_Sword = register("solidified_mana_sword",
 			() -> new Item(new Item.Properties().tab(Techromancy.Techromancy_Tab)));
 	public static final RegistryObject<Item> Solidified_Mana_Hoe = register("solidified_mana_hoe",
-			() -> new solidifed_mana_hoe(new Item.Properties().tab(Techromancy.Techromancy_Tab)));
+			() -> new solidifed_mana_hoe(Common, 0, 0, new Item.Properties().tab(Techromancy.Techromancy_Tab)));
 	
 	private static <T extends Item> RegistryObject<T> register(final String name, final Supplier<T> item){
 		return ITEMS.register(name, item);
