@@ -11,5 +11,5 @@ public class solidified_mana_pickaxe extends PickaxeItem {
 		// TODO Auto-generated constructor stub
 	}
 
-	public static final ToolType PICKAXE;
+	//public static final ToolType PICKAXE;
 }
