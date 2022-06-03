@@ -2,6 +2,8 @@ package com.ml0130.techromancy.datagen;
 
 import com.ml0130.techromancy.Techromancy;
 import com.ml0130.techromancy.datagen.client.ModBlockStateProvider;
+import com.ml0130.techromancy.datagen.client.ModItemModelProvider;
+import com.ml0130.techromancy.datagen.client.lang.ModEnUsProvider;
 
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -20,6 +22,8 @@ public class TechromancyDataGeneration {
 		
 			if (event.includeClient()) {
 				generator.addProvider(new ModBlockStateProvider(generator, helper));
+				generator.addProvider(new ModItemModelProvider(generator, helper));
+				generator.addProvider(new ModEnUsProvider(generator));
 				
 			}
 			if (event.includeServer()) {
