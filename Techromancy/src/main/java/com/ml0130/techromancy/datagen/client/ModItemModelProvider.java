@@ -2,6 +2,7 @@ package com.ml0130.techromancy.datagen.client;
 
 import com.ml0130.techromancy.Techromancy;
 import com.ml0130.techromancy.init.BlockInit;
+import com.ml0130.techromancy.init.ItemInit;
 
 import cpw.mods.modlauncher.api.ITransformationService.Resource;
 import net.minecraft.data.DataGenerator;
@@ -34,11 +35,18 @@ public class ModItemModelProvider extends ItemModelProvider{
 	}
 	@Override
 	protected void registerModels() {
-		// TODO Auto-generated 
+		//Blocks
 		simpleBlockItem(BlockInit.Hex_Gate.get().asItem());
 		simpleBlockItem(BlockInit.Wooden_Steam_Engine.get().asItem());
 		simpleBlockItem(BlockInit.Advanced_Steam_Engine.get().asItem());
 		simpleBlockItem(BlockInit.Mystic_Steam_Engine.get().asItem());
+		
+		//Items
+		oneLayerItem(ItemInit.Solidified_Mana.get());
+		oneLayerItem(ItemInit.Wooden_Gear.get());
+		oneLayerItem(ItemInit.Metal_Gear.get());
+		oneLayerItem(ItemInit.Imbued_Gear.get());
+		
 	}
 
 }
