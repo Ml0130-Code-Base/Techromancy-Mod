@@ -11,13 +11,13 @@ import net.minecraftforge.registries.RegistryObject;
 public class ItemInit {
 	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS,
 			Techromancy.MOD_ID);
-	//Magic Items
+	// Magic Items
 	public static final RegistryObject<Item> Solidified_Mana = register("solidified_mana",
 			() -> new Item(new Item.Properties().tab(Techromancy.Techromancy_Tab)));
-	public static final RegistryObject<Item> Imbued_Gear = register("Imbued_gear",
+	public static final RegistryObject<Item> Imbued_Gear = register("imbued_gear",
 			() -> new Item(new Item.Properties().tab(Techromancy.Techromancy_Tab)));
-	
-	//Steam Items
+
+	// Steam Items
 	public static final RegistryObject<Item> Wooden_Gear = register("wooden_gear",
 			() -> new Item(new Item.Properties().tab(Techromancy.Techromancy_Tab)));
 	public static final RegistryObject<Item> Metal_Gear = register("metal_gear",
