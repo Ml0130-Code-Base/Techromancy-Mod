@@ -5,6 +5,7 @@ import java.util.function.Function;
 import com.google.common.base.Supplier;
 import com.ml0130.techromancy.Techromancy;
 
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -22,18 +23,18 @@ public class BlockInit {
 	//Magic Blocks
 	public static final RegistryObject<Block> Hex_Gate = register("hex_gate", 
 			() -> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_CYAN)), 
-			object -> () -> new Item(new Item.Properties().tab(Techromancy.Techromancy_Tab)));
+			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Techromancy.Techromancy_Tab)));
 	public static final RegistryObject<Block> Mystic_Steam_Engine = register("mystic_steam_engine", 
 			() -> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_MAGENTA)), 
-			object -> () -> new Item(new Item.Properties().tab(Techromancy.Techromancy_Tab)));
+			object -> () -> new BlockItem(object.get(),new Item.Properties().tab(Techromancy.Techromancy_Tab)));
 	
 	//Steam Blocks
-	public static final RegistryObject<Block> Basic_Steam_Engine = register("basic_steam_engine", 
+	public static final RegistryObject<Block> Wooden_Steam_Engine = register("wooden_steam_engine", 
 			() -> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BROWN)), 
-			object -> () -> new Item(new Item.Properties().tab(Techromancy.Techromancy_Tab)));
+			object -> () -> new BlockItem(object.get(),new Item.Properties().tab(Techromancy.Techromancy_Tab)));
 	public static final RegistryObject<Block> Advanced_Steam_Engine = register("advanced_steam_engine", 
 			() -> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_LIGHT_GRAY)), 
-			object -> () -> new Item(new Item.Properties().tab(Techromancy.Techromancy_Tab)));
+			object -> () -> new BlockItem(object.get(),new Item.Properties().tab(Techromancy.Techromancy_Tab)));
 	
 	private static <T extends Block> RegistryObject<T> registerBlock(final String name,
 			final Supplier<? extends T> block) {
