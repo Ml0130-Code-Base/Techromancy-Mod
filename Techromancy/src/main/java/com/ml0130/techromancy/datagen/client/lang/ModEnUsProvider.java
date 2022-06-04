@@ -30,6 +30,7 @@ public class ModEnUsProvider extends LanguageProvider{
 		add(ItemInit.Solidified_Mana_Hoe.get(), "Solidified Mana Hoe");
 		add(ItemInit.Solidified_Mana_Pickaxe.get(), "Solidified Mana Pickaxe");
 		add(ItemInit.Solidified_Mana_Sword.get(), "Solidified Mana Sword");
+		add(ItemInit.Solidified_Mana_Shovel.get(), "Solidified Mana Shovel");
 		
 
 		//Blocks

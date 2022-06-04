@@ -34,6 +34,8 @@ public class ItemInit {
 			() -> new Item(new Item.Properties().tab(Techromancy.Techromancy_Tab).durability(5).rarity(Rarity.COMMON)));
 	public static final RegistryObject<Item> Solidified_Mana_Hoe = register("solidified_mana_hoe",
 			() -> new Item(new Item.Properties().tab(Techromancy.Techromancy_Tab).durability(5).rarity(Rarity.COMMON)));
+	public static final RegistryObject<Item> Solidified_Mana_Shovel = register("solidified_mana_shovel",
+			() -> new Item(new Item.Properties().tab(Techromancy.Techromancy_Tab).durability(5).rarity(Rarity.COMMON)));
 
 	private static <T extends Item> RegistryObject<T> register(final String name, final Supplier<T> item) {
 		return ITEMS.register(name, item);

@@ -51,6 +51,7 @@ public class ModItemModelProvider extends ItemModelProvider{
 		oneLayerItem(ItemInit.Solidified_Mana_Hoe.get());
 		oneLayerItem(ItemInit.Solidified_Mana_Sword.get());
 		oneLayerItem(ItemInit.Glass_Pipe.get());
+		oneLayerItem(ItemInit.Solidified_Mana_Shovel.get());
 		
 	}
 
