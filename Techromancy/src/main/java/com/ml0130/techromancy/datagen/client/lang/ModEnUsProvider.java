@@ -25,6 +25,12 @@ public class ModEnUsProvider extends LanguageProvider{
 		add(ItemInit.Wooden_Gear.get(), "Wooden Gear");
 		add(ItemInit.Metal_Gear.get(), "Metal Gear");
 		add(ItemInit.Imbued_Gear.get(), "Imbued Gear");
+		add(ItemInit.Glass_Pipe.get(), "Glass Pipe");
+		add(ItemInit.Solidified_Mana_Axe.get(), "Solidified Mana Axe");
+		add(ItemInit.Solidified_Mana_Hoe.get(), "Solidified Mana Hoe");
+		add(ItemInit.Solidified_Mana_Pickaxe.get(), "Solidified Mana Pickaxe");
+		add(ItemInit.Solidified_Mana_Sword.get(), "Solidified Mana Sword");
+		
 
 		//Blocks
 		add(BlockInit.Hex_Gate.get(), "Hex Gate");
