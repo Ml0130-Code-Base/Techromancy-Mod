@@ -27,15 +27,15 @@ public class ItemInit {
 
 	// Tool Registry
 	public static final RegistryObject<Item> Solidified_Mana_Pickaxe = register("solidified_mana_pickaxe",
-			() -> new Item(new Item.Properties().tab(Techromancy.Techromancy_Tab).durability(5).rarity(Rarity.COMMON)));
+			() -> new Item(new Item.Properties().tab(Techromancy.Techromancy_Tab)));
 	public static final RegistryObject<Item> Solidified_Mana_Axe = register("solidified_mana_axe",
-			() -> new Item(new Item.Properties().tab(Techromancy.Techromancy_Tab).durability(5).rarity(Rarity.COMMON)));
+			() -> new Item(new Item.Properties().tab(Techromancy.Techromancy_Tab)));
 	public static final RegistryObject<Item> Solidified_Mana_Sword = register("solidified_mana_sword",
-			() -> new Item(new Item.Properties().tab(Techromancy.Techromancy_Tab).durability(5).rarity(Rarity.COMMON)));
+			() -> new Item(new Item.Properties().tab(Techromancy.Techromancy_Tab)));
 	public static final RegistryObject<Item> Solidified_Mana_Hoe = register("solidified_mana_hoe",
-			() -> new Item(new Item.Properties().tab(Techromancy.Techromancy_Tab).durability(5).rarity(Rarity.COMMON)));
+			() -> new Item(new Item.Properties().tab(Techromancy.Techromancy_Tab)));
 	public static final RegistryObject<Item> Solidified_Mana_Shovel = register("solidified_mana_shovel",
-			() -> new Item(new Item.Properties().tab(Techromancy.Techromancy_Tab).durability(5).rarity(Rarity.COMMON)));
+			() -> new Item(new Item.Properties().tab(Techromancy.Techromancy_Tab)));
 
 	private static <T extends Item> RegistryObject<T> register(final String name, final Supplier<T> item) {
 		return ITEMS.register(name, item);
