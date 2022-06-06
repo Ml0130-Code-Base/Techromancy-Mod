@@ -16,6 +16,8 @@
 	"block.techromancy.wooden_steam_engine": "Wooden Steam Engine",
 	"block.techromancy.advanced_steam_engine": "Advanced Steam Engine",
 	"block.techromancy.mystic_steam_engine": "Mystic Steam Engine",
+	"block.techromancy.compressor": "Compressor",
+	"block.techromancy.pressurized_glass_pipe": "Pressurized Glass Pipe",
 	
 	//Loclized Creative Tab Name
 	"itemGroup.techromancy": "Techromancy"
