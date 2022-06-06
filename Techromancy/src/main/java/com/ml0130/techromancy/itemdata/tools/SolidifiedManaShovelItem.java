@@ -3,9 +3,9 @@ package com.ml0130.techromancy.itemdata.tools;
 import net.minecraft.world.item.ShovelItem;
 import net.minecraft.world.item.Tier;
 
-public class solidifed_mana_shovel extends ShovelItem{
+public class SolidifiedManaShovelItem extends ShovelItem{
 
-	public solidifed_mana_shovel(Tier p_43114_, float p_43115_, float p_43116_, Properties p_43117_) {
+	public SolidifiedManaShovelItem(Tier p_43114_, float p_43115_, float p_43116_, Properties p_43117_) {
 		super(p_43114_, p_43115_, p_43116_, p_43117_);
 		// TODO Auto-generated constructor stub
 	}
