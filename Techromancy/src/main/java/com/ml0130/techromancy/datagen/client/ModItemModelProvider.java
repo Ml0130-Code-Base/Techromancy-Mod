@@ -4,7 +4,6 @@ import com.ml0130.techromancy.Techromancy;
 import com.ml0130.techromancy.init.BlockInit;
 import com.ml0130.techromancy.init.ItemInit;
 
-import cpw.mods.modlauncher.api.ITransformationService.Resource;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.PackType;
@@ -41,7 +40,7 @@ public class ModItemModelProvider extends ItemModelProvider{
 		simpleBlockItem(BlockInit.Advanced_Steam_Engine.get().asItem());
 		simpleBlockItem(BlockInit.Mystic_Steam_Engine.get().asItem());
 		simpleBlockItem(BlockInit.Compressor.get().asItem());
-		simpleBlockItem(BlockInit.Pressurized_Glass_Pipe.get().asItem());
+		simpleBlockItem(BlockInit.Pressurized_Glass_Pipe.get().asItem()	);
 		
 		//Items
 		oneLayerItem(ItemInit.Solidified_Mana.get());

@@ -14,6 +14,8 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.ShovelItem;
 import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.Tiers;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -37,15 +39,15 @@ public class ItemInit {
 
 	// Tool Registry
 	public static final RegistryObject<PickaxeItem> Solidified_Mana_Pickaxe = register("solidified_mana_pickaxe",
-            () -> new SolidifiedManaPickaxeItem(null, 0, 0, new Item.Properties().tab(Techromancy.Techromancy_Tab))); 
+            () -> new SolidifiedManaPickaxeItem(Tiers.IRON, 0, 0, new Item.Properties().tab(Techromancy.Techromancy_Tab))); 
 	public static final RegistryObject<AxeItem> Solidified_Mana_Axe = register("solidified_mana_axe",
-            () -> new SolidifiedManaAxeItem(null, 0, 0, new Item.Properties().tab(Techromancy.Techromancy_Tab)));
+            () -> new SolidifiedManaAxeItem(Tiers.IRON, 0, 0, new Item.Properties().tab(Techromancy.Techromancy_Tab)));
 	public static final RegistryObject<SwordItem> Solidified_Mana_Sword = register("solidified_mana_sword",
-            () -> new SolidifiedManaSwordItem(null, 0, 0, new Item.Properties().tab(Techromancy.Techromancy_Tab)));
+            () -> new SolidifiedManaSwordItem(Tiers.IRON, 0, 0, new Item.Properties().tab(Techromancy.Techromancy_Tab)));
 	public static final RegistryObject<HoeItem> Solidified_Mana_Hoe = register("solidified_mana_hoe",
-            () -> new SolidifiedManaHoeItem(null, 0, 0, new Item.Properties().tab(Techromancy.Techromancy_Tab)));
+            () -> new SolidifiedManaHoeItem(Tiers.IRON, 0, 0, new Item.Properties().tab(Techromancy.Techromancy_Tab)));
 	public static final RegistryObject<ShovelItem> Solidified_Mana_Shovel = register("solidified_mana_shovel",
-            () -> new SolidifiedManaShovelItem(null, 0, 0, new Item.Properties().tab(Techromancy.Techromancy_Tab)));
+            () -> new SolidifiedManaShovelItem(Tiers.IRON, 0, 0, new Item.Properties().tab(Techromancy.Techromancy_Tab)));
 
 	private static <T extends Item> RegistryObject<T> register(final String name, final Supplier<T> item) {
 		return ITEMS.register(name, item);
