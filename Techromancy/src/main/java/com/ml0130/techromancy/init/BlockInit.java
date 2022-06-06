@@ -4,6 +4,12 @@ import java.util.function.Function;
 
 import com.google.common.base.Supplier;
 import com.ml0130.techromancy.Techromancy;
+import com.ml0130.techromancy.block.magic.HexGate;
+import com.ml0130.techromancy.block.magic.MysticSteamEngine;
+import com.ml0130.techromancy.block.steam.AdvancedSteamEngine;
+import com.ml0130.techromancy.block.steam.Compressor;
+import com.ml0130.techromancy.block.steam.PressurizedGlassPipe;
+import com.ml0130.techromancy.block.steam.WoodenSteamEngine;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -22,24 +28,24 @@ public class BlockInit {
 	
 	//Magic Blocks
 	public static final RegistryObject<Block> Hex_Gate = register("hex_gate", 
-			() -> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_CYAN)), 
+			() -> new HexGate(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_CYAN)), 
 			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Techromancy.Techromancy_Tab)));
 	public static final RegistryObject<Block> Mystic_Steam_Engine = register("mystic_steam_engine", 
-			() -> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_MAGENTA)), 
+			() -> new MysticSteamEngine(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_MAGENTA)), 
 			object -> () -> new BlockItem(object.get(),new Item.Properties().tab(Techromancy.Techromancy_Tab)));
 	
 	//Steam Blocks
 	public static final RegistryObject<Block> Wooden_Steam_Engine = register("wooden_steam_engine", 
-			() -> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BROWN)), 
+			() -> new WoodenSteamEngine(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BROWN)), 
 			object -> () -> new BlockItem(object.get(),new Item.Properties().tab(Techromancy.Techromancy_Tab)));
 	public static final RegistryObject<Block> Advanced_Steam_Engine = register("advanced_steam_engine", 
-			() -> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_LIGHT_GRAY)), 
+			() -> new AdvancedSteamEngine(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_LIGHT_GRAY)), 
 			object -> () -> new BlockItem(object.get(),new Item.Properties().tab(Techromancy.Techromancy_Tab)));
 	public static final RegistryObject<Block> Compressor = register("compressor", 
-			() -> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_LIGHT_GRAY)), 
+			() -> new Compressor(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_LIGHT_GRAY)), 
 			object -> () -> new BlockItem(object.get(),new Item.Properties().tab(Techromancy.Techromancy_Tab)));
 	public static final RegistryObject<Block> Pressurized_Glass_Pipe = register("pressurized_glass_pipe", 
-			() -> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_LIGHT_GRAY)), 
+			() -> new PressurizedGlassPipe(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.TERRACOTTA_WHITE)), 
 			object -> () -> new BlockItem(object.get(),new Item.Properties().tab(Techromancy.Techromancy_Tab)));
 
 	
