@@ -35,6 +35,13 @@ public class BlockInit {
 	public static final RegistryObject<Block> Advanced_Steam_Engine = register("advanced_steam_engine", 
 			() -> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_LIGHT_GRAY)), 
 			object -> () -> new BlockItem(object.get(),new Item.Properties().tab(Techromancy.Techromancy_Tab)));
+	public static final RegistryObject<Block> Compressor = register("compressor", 
+			() -> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_LIGHT_GRAY)), 
+			object -> () -> new BlockItem(object.get(),new Item.Properties().tab(Techromancy.Techromancy_Tab)));
+	public static final RegistryObject<Block> Pressurized_Glass_Pipe = register("pressurized_glass_pipe", 
+			() -> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_LIGHT_GRAY)), 
+			object -> () -> new BlockItem(object.get(),new Item.Properties().tab(Techromancy.Techromancy_Tab)));
+
 	
 	private static <T extends Block> RegistryObject<T> registerBlock(final String name,
 			final Supplier<? extends T> block) {
