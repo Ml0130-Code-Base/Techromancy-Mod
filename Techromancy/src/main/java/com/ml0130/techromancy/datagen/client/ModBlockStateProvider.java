@@ -20,6 +20,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
 		simpleBlock(BlockInit.Wooden_Steam_Engine.get());
 		simpleBlock(BlockInit.Advanced_Steam_Engine.get());
 		simpleBlock(BlockInit.Mystic_Steam_Engine.get());
+		simpleBlock(BlockInit.Compressor.get());
+		simpleBlock(BlockInit.Pressurized_Glass_Pipe.get());
 		
 	}
 
