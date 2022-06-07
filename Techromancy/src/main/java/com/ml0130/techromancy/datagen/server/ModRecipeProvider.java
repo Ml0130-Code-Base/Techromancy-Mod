@@ -15,9 +15,9 @@ public class ModRecipeProvider extends RecipeProvider{
 		super(generator);
 		// TODO Auto-generated constructor stub
 	}
-	//@Override
-	//protected void buildCraftingRecipes(Consumer<FinishedRecipe> consumer) {
-		//ShapedRecipeBuilder.shaped(ItemInit.Solidified_Mana.get())
-			//.define(null, null);
-	//}
+	@Override
+	protected void buildCraftingRecipes(Consumer<FinishedRecipe> consumer) {
+		ShapedRecipeBuilder.shaped(ItemInit.Solidified_Mana.get())
+			.define(null, null);
+	}
 }
