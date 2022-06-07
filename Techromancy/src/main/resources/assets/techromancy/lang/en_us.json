@@ -7,9 +7,12 @@
 	"item.techromancy.solidified_mana_axe": "Solidified Mana Axe",
 	"item.techromancy.solidified_mana_shovel": "Solidified Mana Shovel",
 	"item.techromancy.wooden_gear": "Wooden Gear",
-	"item.techromancy.metal_gear": "Metal Gear",
+	"item.techromancy.steel_gear": "Steel Gear",
 	"item.techromancy.glass_pipe": "Glass Pipe",
-	"item.techromancy.imbued_gear": "Imbued Gear",	
+	"item.techromancy.imbued_gear": "Imbued Gear",
+	
+	//Loclized Ores and Ingot Names
+	"item.techromancy.steel_ingot": "Steel Ingot",	
 	
 	//Locilzed Block Names
 	"block.techromancy.hex_gate": "Hex Gate",

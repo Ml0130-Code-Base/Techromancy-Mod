@@ -23,7 +23,7 @@ public class ModEnUsProvider extends LanguageProvider{
 		//Items
 		add(ItemInit.Solidified_Mana.get(), "Solidified Mana");
 		add(ItemInit.Wooden_Gear.get(), "Wooden Gear");
-		add(ItemInit.Metal_Gear.get(), "Metal Gear");
+		add(ItemInit.Steel_Gear.get(), "Steel Gear");
 		add(ItemInit.Imbued_Gear.get(), "Imbued Gear");
 		add(ItemInit.Glass_Pipe.get(), "Glass Pipe");
 		add(ItemInit.Solidified_Mana_Axe.get(), "Solidified Mana Axe");
@@ -31,6 +31,9 @@ public class ModEnUsProvider extends LanguageProvider{
 		add(ItemInit.Solidified_Mana_Pickaxe.get(), "Solidified Mana Pickaxe");
 		add(ItemInit.Solidified_Mana_Sword.get(), "Solidified Mana Sword");
 		add(ItemInit.Solidified_Mana_Shovel.get(), "Solidified Mana Shovel");
+		
+		//Ores and Ingots
+		add(ItemInit.Steel_Ingot.get(), "Steel Ingot");
 		
 
 		//Blocks

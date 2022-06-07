@@ -45,7 +45,7 @@ public class ModItemModelProvider extends ItemModelProvider{
 		//Items
 		oneLayerItem(ItemInit.Solidified_Mana.get());
 		oneLayerItem(ItemInit.Wooden_Gear.get());
-		oneLayerItem(ItemInit.Metal_Gear.get());
+		oneLayerItem(ItemInit.Steel_Gear.get());
 		oneLayerItem(ItemInit.Imbued_Gear.get());
 		oneLayerItem(ItemInit.Solidified_Mana_Pickaxe.get());
 		oneLayerItem(ItemInit.Solidified_Mana_Axe.get());
@@ -53,6 +53,7 @@ public class ModItemModelProvider extends ItemModelProvider{
 		oneLayerItem(ItemInit.Solidified_Mana_Sword.get());
 		oneLayerItem(ItemInit.Glass_Pipe.get());
 		oneLayerItem(ItemInit.Solidified_Mana_Shovel.get());
+		oneLayerItem(ItemInit.Steel_Ingot.get());
 		
 	}
 
