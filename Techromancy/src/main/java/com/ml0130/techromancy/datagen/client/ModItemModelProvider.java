@@ -8,6 +8,7 @@ import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.PackType;
 import net.minecraft.world.item.Item;
+import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
@@ -21,17 +22,19 @@ public class ModItemModelProvider extends ItemModelProvider{
 		getBuilder(item.getRegistryName().toString())
 		.parent(getExistingFile(modLoc("block/" + item.getRegistryName().getPath())));
 	}
-	protected void oneLayerItem(Item item, ResourceLocation texture) {
-		ResourceLocation itemTexture = new ResourceLocation(texture.getNamespace(), "item/" + texture.getPath());
-		if (existingFileHelper.exists(itemTexture, PackType.CLIENT_RESOURCES, ".png", "texture")) {
-			getBuilder(item.getRegistryName().getPath()).parent(getExistingFile(mcLoc("item/genertated"))).texture("layer0", itemTexture);
-		}else {
-		System.out.println("Texture for" + item.getRegistryName().toString() + " not present at" + item.getRegistryName().toString());
-	}
-	}
-	protected void oneLayerItem(Item item) {
-		oneLayerItem(item, item.getRegistryName());
-	}
+	private ItemModelBuilder simpleItem(Item item)
+    {
+        return withExistingParent(item.getRegistryName().getPath(), 
+                new ResourceLocation("item/generated")).texture("layer0", 
+                        new ResourceLocation(Techromancy.MOD_ID, "item/" + item.getRegistryName().getPath()));
+    }
+
+    private ItemModelBuilder handheldItem(Item item)
+    {
+        return withExistingParent(item.getRegistryName().getPath(), 
+                new ResourceLocation("item/handheld")).texture("layer0", 
+                        new ResourceLocation(Techromancy.MOD_ID, "item/" + item.getRegistryName().getPath()));
+    }
 	@Override
 	protected void registerModels() {
 		//Blocks
@@ -44,21 +47,21 @@ public class ModItemModelProvider extends ItemModelProvider{
 		simpleBlockItem(BlockInit.Steel_Block.get().asItem());
 		
 		//Items
-		oneLayerItem(ItemInit.Solidified_Mana.get());
-		oneLayerItem(ItemInit.Wooden_Gear.get());
-		oneLayerItem(ItemInit.Steel_Gear.get());
-		oneLayerItem(ItemInit.Imbued_Gear.get());
-		oneLayerItem(ItemInit.Solidified_Mana_Pickaxe.get());
-		oneLayerItem(ItemInit.Solidified_Mana_Axe.get());
-		oneLayerItem(ItemInit.Solidified_Mana_Hoe.get());
-		oneLayerItem(ItemInit.Solidified_Mana_Sword.get());
-		oneLayerItem(ItemInit.Solidified_Mana_Shovel.get());
-		oneLayerItem(ItemInit.Glass_Pipe.get());
-		oneLayerItem(ItemInit.Steel_Ingot.get());
-		oneLayerItem(ItemInit.Steel_Pickaxe.get());
-		oneLayerItem(ItemInit.Steel_Axe.get());
-		oneLayerItem(ItemInit.Steel_Hoe.get());
-		oneLayerItem(ItemInit.Steel_Sword.get());
+		simpleItem(ItemInit.Solidified_Mana.get());
+		simpleItem(ItemInit.Wooden_Gear.get());
+		simpleItem(ItemInit.Steel_Gear.get());
+		simpleItem(ItemInit.Imbued_Gear.get());
+		simpleItem(ItemInit.Solidified_Mana_Pickaxe.get());
+		simpleItem(ItemInit.Solidified_Mana_Axe.get());
+		simpleItem(ItemInit.Solidified_Mana_Hoe.get());
+		simpleItem(ItemInit.Solidified_Mana_Sword.get());
+		simpleItem(ItemInit.Solidified_Mana_Shovel.get());
+		simpleItem(ItemInit.Glass_Pipe.get());
+		simpleItem(ItemInit.Steel_Ingot.get());
+		simpleItem(ItemInit.Steel_Pickaxe.get());
+		simpleItem(ItemInit.Steel_Axe.get());
+		simpleItem(ItemInit.Steel_Hoe.get());
+		simpleItem(ItemInit.Steel_Sword.get());
 		
 	}
 
