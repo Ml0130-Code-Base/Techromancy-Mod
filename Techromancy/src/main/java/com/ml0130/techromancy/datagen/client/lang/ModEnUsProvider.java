@@ -31,6 +31,11 @@ public class ModEnUsProvider extends LanguageProvider{
 		add(ItemInit.Solidified_Mana_Pickaxe.get(), "Solidified Mana Pickaxe");
 		add(ItemInit.Solidified_Mana_Sword.get(), "Solidified Mana Sword");
 		add(ItemInit.Solidified_Mana_Shovel.get(), "Solidified Mana Shovel");
+		add(ItemInit.Steel_Axe.get(), "Steel Axe");
+		add(ItemInit.Steel_Hoe.get(), "Steel Hoe");
+		add(ItemInit.Steel_Pickaxe.get(), "Steel Pickaxe");
+		add(ItemInit.Steel_Sword.get(), "Steel Sword");
+		add(ItemInit.Steel_Shovel.get(), "Steel Shovel");
 		
 		//Ores and Ingots
 		add(ItemInit.Steel_Ingot.get(), "Steel Ingot");

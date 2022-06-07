@@ -2,11 +2,16 @@ package com.ml0130.techromancy.init;
 
 import com.google.common.base.Supplier;
 import com.ml0130.techromancy.Techromancy;
-import com.ml0130.techromancy.itemdata.tools.SolidifiedManaAxeItem;
-import com.ml0130.techromancy.itemdata.tools.SolidifiedManaHoeItem;
-import com.ml0130.techromancy.itemdata.tools.SolidifiedManaPickaxeItem;
-import com.ml0130.techromancy.itemdata.tools.SolidifiedManaShovelItem;
-import com.ml0130.techromancy.itemdata.tools.SolidifiedManaSwordItem;
+import com.ml0130.techromancy.itemdata.manatools.SolidifiedManaAxeItem;
+import com.ml0130.techromancy.itemdata.manatools.SolidifiedManaHoeItem;
+import com.ml0130.techromancy.itemdata.manatools.SolidifiedManaPickaxeItem;
+import com.ml0130.techromancy.itemdata.manatools.SolidifiedManaShovelItem;
+import com.ml0130.techromancy.itemdata.manatools.SolidifiedManaSwordItem;
+import com.ml0130.techromancy.itemdata.tools.SteelAxeItem;
+import com.ml0130.techromancy.itemdata.tools.SteelHoeItem;
+import com.ml0130.techromancy.itemdata.tools.SteelPickaxeItem;
+import com.ml0130.techromancy.itemdata.tools.SteelShovelItem;
+import com.ml0130.techromancy.itemdata.tools.SteelSwordItem;
 
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.HoeItem;
@@ -52,6 +57,17 @@ public class ItemInit {
             () -> new SolidifiedManaHoeItem(Tiers.IRON, 0, 0, new Item.Properties().tab(Techromancy.Techromancy_Tab)));
 	public static final RegistryObject<ShovelItem> Solidified_Mana_Shovel = register("solidified_mana_shovel",
             () -> new SolidifiedManaShovelItem(Tiers.IRON, 0, 0, new Item.Properties().tab(Techromancy.Techromancy_Tab)));
+	
+	public static final RegistryObject<PickaxeItem> Steel_Pickaxe = register("steel_pickaxe",
+            () -> new SteelPickaxeItem(Tiers.IRON, 0, 0, new Item.Properties().tab(Techromancy.Techromancy_Tab))); 
+	public static final RegistryObject<AxeItem> Steel_Axe = register("steel_axe",
+            () -> new SteelAxeItem(Tiers.IRON, 0, 0, new Item.Properties().tab(Techromancy.Techromancy_Tab)));
+	public static final RegistryObject<SwordItem> Steel_Sword = register("steel_sword",
+            () -> new SteelSwordItem(Tiers.IRON, 0, 0, new Item.Properties().tab(Techromancy.Techromancy_Tab)));
+	public static final RegistryObject<HoeItem> Steel_Hoe = register("steel_hoe",
+            () -> new SteelHoeItem(Tiers.IRON, 0, 0, new Item.Properties().tab(Techromancy.Techromancy_Tab)));
+	public static final RegistryObject<ShovelItem> Steel_Shovel = register("steel_shovel",
+            () -> new SteelShovelItem(Tiers.IRON, 0, 0, new Item.Properties().tab(Techromancy.Techromancy_Tab)));
 
 	private static <T extends Item> RegistryObject<T> register(final String name, final Supplier<T> item) {
 		return ITEMS.register(name, item);
