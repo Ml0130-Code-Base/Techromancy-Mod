@@ -43,5 +43,6 @@ public class ModEnUsProvider extends LanguageProvider{
 		add(BlockInit.Mystic_Steam_Engine.get(), "Mystic Steam Engine");
 		add(BlockInit.Compressor.get(), "Compressor");
 		add(BlockInit.Pressurized_Glass_Pipe.get(), "Pressurized Glass Pipe");
+		add(BlockInit.Steel_Block.get(), "Steel Block");
 }
 }

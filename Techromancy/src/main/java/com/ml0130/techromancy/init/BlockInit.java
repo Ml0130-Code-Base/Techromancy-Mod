@@ -47,7 +47,11 @@ public class BlockInit {
 	public static final RegistryObject<Block> Pressurized_Glass_Pipe = register("pressurized_glass_pipe", 
 			() -> new PressurizedGlassPipe(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.TERRACOTTA_WHITE)), 
 			object -> () -> new BlockItem(object.get(),new Item.Properties().tab(Techromancy.Techromancy_Tab)));
-
+	
+	//Other Blocks
+	public static final RegistryObject<Block> Steel_Block = register("steel_block", 
+			() -> new PressurizedGlassPipe(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.TERRACOTTA_WHITE)), 
+			object -> () -> new BlockItem(object.get(),new Item.Properties().tab(Techromancy.Techromancy_Tab)));
 	
 	private static <T extends Block> RegistryObject<T> registerBlock(final String name,
 			final Supplier<? extends T> block) {

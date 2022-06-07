@@ -41,6 +41,7 @@ public class ModItemModelProvider extends ItemModelProvider{
 		simpleBlockItem(BlockInit.Mystic_Steam_Engine.get().asItem());
 		simpleBlockItem(BlockInit.Compressor.get().asItem());
 		simpleBlockItem(BlockInit.Pressurized_Glass_Pipe.get().asItem()	);
+		simpleBlockItem(BlockInit.Steel_Block.get().asItem());
 		
 		//Items
 		oneLayerItem(ItemInit.Solidified_Mana.get());
