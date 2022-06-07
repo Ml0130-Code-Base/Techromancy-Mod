@@ -1,4 +1,4 @@
-package com.ml0130.techromancy.block.magic;
+ package com.ml0130.techromancy.block.magic;
 
 import net.minecraft.world.level.block.Block;
 
