@@ -1,4 +1,4 @@
-package com.ml0130.techromancy.itemdata.tools;
+package com.ml0130.techromancy.itemdata.manatools;
 
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.Tier;
