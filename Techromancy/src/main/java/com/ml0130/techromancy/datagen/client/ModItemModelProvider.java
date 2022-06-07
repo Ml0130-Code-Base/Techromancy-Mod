@@ -52,13 +52,13 @@ public class ModItemModelProvider extends ItemModelProvider{
 		oneLayerItem(ItemInit.Solidified_Mana_Axe.get());
 		oneLayerItem(ItemInit.Solidified_Mana_Hoe.get());
 		oneLayerItem(ItemInit.Solidified_Mana_Sword.get());
+		oneLayerItem(ItemInit.Solidified_Mana_Shovel.get());
+		oneLayerItem(ItemInit.Glass_Pipe.get());
+		oneLayerItem(ItemInit.Steel_Ingot.get());
 		oneLayerItem(ItemInit.Steel_Pickaxe.get());
 		oneLayerItem(ItemInit.Steel_Axe.get());
 		oneLayerItem(ItemInit.Steel_Hoe.get());
 		oneLayerItem(ItemInit.Steel_Sword.get());
-		oneLayerItem(ItemInit.Glass_Pipe.get());
-		oneLayerItem(ItemInit.Solidified_Mana_Shovel.get());
-		oneLayerItem(ItemInit.Steel_Ingot.get());
 		
 	}
 
