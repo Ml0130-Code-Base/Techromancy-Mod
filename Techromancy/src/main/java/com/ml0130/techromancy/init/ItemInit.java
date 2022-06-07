@@ -48,15 +48,15 @@ public class ItemInit {
 
 	// Tool Registry
 	public static final RegistryObject<PickaxeItem> Solidified_Mana_Pickaxe = register("solidified_mana_pickaxe",
-            () -> new SolidifiedManaPickaxeItem(Tiers.IRON, 0, 0, new Item.Properties().tab(Techromancy.Techromancy_Tab))); 
+            () -> new SolidifiedManaPickaxeItem(Tiers.DIAMOND, 0, 0, new Item.Properties().tab(Techromancy.Techromancy_Tab))); 
 	public static final RegistryObject<AxeItem> Solidified_Mana_Axe = register("solidified_mana_axe",
-            () -> new SolidifiedManaAxeItem(Tiers.IRON, 0, 0, new Item.Properties().tab(Techromancy.Techromancy_Tab)));
+            () -> new SolidifiedManaAxeItem(Tiers.DIAMOND, 0, 0, new Item.Properties().tab(Techromancy.Techromancy_Tab)));
 	public static final RegistryObject<SwordItem> Solidified_Mana_Sword = register("solidified_mana_sword",
-            () -> new SolidifiedManaSwordItem(Tiers.IRON, 0, 0, new Item.Properties().tab(Techromancy.Techromancy_Tab)));
+            () -> new SolidifiedManaSwordItem(Tiers.DIAMOND, 0, 0, new Item.Properties().tab(Techromancy.Techromancy_Tab)));
 	public static final RegistryObject<HoeItem> Solidified_Mana_Hoe = register("solidified_mana_hoe",
-            () -> new SolidifiedManaHoeItem(Tiers.IRON, 0, 0, new Item.Properties().tab(Techromancy.Techromancy_Tab)));
+            () -> new SolidifiedManaHoeItem(Tiers.DIAMOND, 0, 0, new Item.Properties().tab(Techromancy.Techromancy_Tab)));
 	public static final RegistryObject<ShovelItem> Solidified_Mana_Shovel = register("solidified_mana_shovel",
-            () -> new SolidifiedManaShovelItem(Tiers.IRON, 0, 0, new Item.Properties().tab(Techromancy.Techromancy_Tab)));
+            () -> new SolidifiedManaShovelItem(Tiers.DIAMOND, 0, 0, new Item.Properties().tab(Techromancy.Techromancy_Tab)));
 	
 	public static final RegistryObject<PickaxeItem> Steel_Pickaxe = register("steel_pickaxe",
             () -> new SteelPickaxeItem(Tiers.IRON, 0, 0, new Item.Properties().tab(Techromancy.Techromancy_Tab))); 
