@@ -1,5 +1,5 @@
 {
-	"parent": "item/generated",
+	"parent": "item/handheld",
 	"textures":{
 		"layer0": "techromancy:item/steel_shovel"
 	}
