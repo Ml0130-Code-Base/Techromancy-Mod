@@ -29,7 +29,8 @@ public class ModItemModelProvider extends ItemModelProvider{
                         new ResourceLocation(Techromancy.MOD_ID, "item/" + item.getRegistryName().getPath()));
     }
 
-    private ItemModelBuilder handheldItem(Item item)
+    @SuppressWarnings("unused")
+	private ItemModelBuilder handheldItem(Item item)
     {
         return withExistingParent(item.getRegistryName().getPath(), 
                 new ResourceLocation("item/handheld")).texture("layer0", 
