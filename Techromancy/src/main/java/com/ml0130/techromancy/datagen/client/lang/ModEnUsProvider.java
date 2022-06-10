@@ -49,5 +49,6 @@ public class ModEnUsProvider extends LanguageProvider{
 		add(BlockInit.Compressor.get(), "Compressor");
 		add(BlockInit.Pressurized_Glass_Pipe.get(), "Pressurized Glass Pipe");
 		add(BlockInit.Steel_Block.get(), "Steel Block");
+		add(BlockInit.Discovery_Table.get(), "Discovery Table");
 }
 }

@@ -8,6 +8,7 @@ import com.ml0130.techromancy.block.magic.HexGate;
 import com.ml0130.techromancy.block.magic.MysticSteamEngine;
 import com.ml0130.techromancy.block.steam.AdvancedSteamEngine;
 import com.ml0130.techromancy.block.steam.Compressor;
+import com.ml0130.techromancy.block.steam.DiscoveryTable;
 import com.ml0130.techromancy.block.steam.PressurizedGlassPipe;
 import com.ml0130.techromancy.block.steam.WoodenSteamEngine;
 
@@ -52,9 +53,9 @@ public class BlockInit {
 	public static final RegistryObject<Block> Steel_Block = register("steel_block", 
 			() -> new PressurizedGlassPipe(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.TERRACOTTA_WHITE)), 
 			object -> () -> new BlockItem(object.get(),new Item.Properties().tab(Techromancy.Techromancy_Tab)));
-	//public static final RegistryObject<Block> Steel_Block = register("steel_block", 
-		//	() -> new PressurizedGlassPipe(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.TERRACOTTA_WHITE)), 
-			//object -> () -> new BlockItem(object.get(),new Item.Properties().tab(Techromancy.Techromancy_Tab)));
+	public static final RegistryObject<Block> Discovery_Table = register("discovery_table", 
+			() -> new DiscoveryTable(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.TERRACOTTA_WHITE)), 
+			object -> () -> new BlockItem(object.get(),new Item.Properties().tab(Techromancy.Techromancy_Tab)));
 	
 	private static <T extends Block> RegistryObject<T> registerBlock(final String name,
 			final Supplier<? extends T> block) {

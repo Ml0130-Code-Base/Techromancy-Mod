@@ -23,6 +23,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 		simpleBlock(BlockInit.Compressor.get());
 		simpleBlock(BlockInit.Pressurized_Glass_Pipe.get());
 		simpleBlock(BlockInit.Steel_Block.get());
+		simpleBlock(BlockInit.Discovery_Table.get());
 		
 	}
 

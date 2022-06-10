@@ -41,7 +41,7 @@ public class ItemInit {
 	public static final RegistryObject<Item> Glass_Pipe = register("glass_pipe",
 			() -> new Item(new Item.Properties().tab(Techromancy.Techromancy_Tab)));
 	
-	//Ores and Ingots
+	//Ores and Ingot
 	public static final RegistryObject<Item> Steel_Ingot = register("steel_ingot", 
 			() -> new Item(new Item.Properties().tab(Techromancy.Techromancy_Tab)));
 
