@@ -1,4 +1,4 @@
-package com.ml0130.techromancy.block.steam;
+package com.ml0130.techromancy.block.reserch;
 
 import net.minecraft.world.level.block.Block;
 

@@ -6,9 +6,10 @@ import com.google.common.base.Supplier;
 import com.ml0130.techromancy.Techromancy;
 import com.ml0130.techromancy.block.magic.HexGate;
 import com.ml0130.techromancy.block.magic.MysticSteamEngine;
+import com.ml0130.techromancy.block.reserch.DiscoveryTable;
+import com.ml0130.techromancy.block.reserch.Solidifier;
 import com.ml0130.techromancy.block.steam.AdvancedSteamEngine;
 import com.ml0130.techromancy.block.steam.Compressor;
-import com.ml0130.techromancy.block.steam.DiscoveryTable;
 import com.ml0130.techromancy.block.steam.PressurizedGlassPipe;
 import com.ml0130.techromancy.block.steam.WoodenSteamEngine;
 
@@ -55,6 +56,9 @@ public class BlockInit {
 			object -> () -> new BlockItem(object.get(),new Item.Properties().tab(Techromancy.Techromancy_Tab)));
 	public static final RegistryObject<Block> Discovery_Table = register("discovery_table", 
 			() -> new DiscoveryTable(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.TERRACOTTA_WHITE)), 
+			object -> () -> new BlockItem(object.get(),new Item.Properties().tab(Techromancy.Techromancy_Tab)));
+	public static final RegistryObject<Block> Solidifier = register("solidifier", 
+			() -> new Solidifier(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.TERRACOTTA_WHITE)), 
 			object -> () -> new BlockItem(object.get(),new Item.Properties().tab(Techromancy.Techromancy_Tab)));
 	
 	private static <T extends Block> RegistryObject<T> registerBlock(final String name,
