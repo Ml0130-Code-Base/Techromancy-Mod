@@ -20,6 +20,7 @@ import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.ShovelItem;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tiers;
+import net.minecraftforge.event.RegistryEvent.Register;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -32,6 +33,10 @@ public class ItemInit {
 			() -> new Item(new Item.Properties().tab(Techromancy.Techromancy_Tab)));
 	public static final RegistryObject<Item> Imbued_Gear = register("imbued_gear",
 			() -> new Item(new Item.Properties().tab(Techromancy.Techromancy_Tab)));
+	public static final RegistryObject<Item> Imbued_Glass_Leans = register("imbued_glass_leans", 
+			() -> new Item(new Item.Properties().tab(Techromancy.Techromancy_Tab)));
+	public static final RegistryObject<Item> Glass_Leans = register("glass_leans",
+			() -> new Item(new Item.Properties().tab(Techromancy.Techromancy_Tab))); 
 
 	// Steam Items
 	public static final RegistryObject<Item> Wooden_Gear = register("wooden_gear",

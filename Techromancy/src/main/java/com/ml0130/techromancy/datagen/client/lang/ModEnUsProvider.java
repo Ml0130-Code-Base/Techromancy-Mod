@@ -36,6 +36,8 @@ public class ModEnUsProvider extends LanguageProvider{
 		add(ItemInit.Steel_Pickaxe.get(), "Steel Pickaxe");
 		add(ItemInit.Steel_Sword.get(), "Steel Sword");
 		add(ItemInit.Steel_Shovel.get(), "Steel Shovel");
+		add(ItemInit.Glass_Leans.get(), "Glass Leans");
+		add(ItemInit.Imbued_Glass_Leans.get(), "Imbued Glass Leans");
 		
 		//Ores and Ingots
 		add(ItemInit.Steel_Ingot.get(), "Steel Ingot");

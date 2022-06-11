@@ -64,6 +64,8 @@ public class ModItemModelProvider extends ItemModelProvider{
 		simpleItem(ItemInit.Steel_Axe.get());
 		simpleItem(ItemInit.Steel_Hoe.get());
 		simpleItem(ItemInit.Steel_Sword.get());
+		simpleItem(ItemInit.Glass_Leans.get());
+		simpleItem(ItemInit.Imbued_Glass_Leans.get());
 		
 	}
 

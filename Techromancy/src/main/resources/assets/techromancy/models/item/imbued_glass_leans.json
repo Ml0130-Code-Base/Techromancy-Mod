@@ -1,0 +1,6 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "techromancy:item/imbued_glass_leans"
+	}
+}
