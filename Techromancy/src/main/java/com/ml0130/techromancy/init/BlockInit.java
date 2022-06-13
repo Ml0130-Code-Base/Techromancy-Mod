@@ -57,7 +57,7 @@ public class BlockInit {
 	
 	//Reserch Blocks
 	public static final RegistryObject<Block> Discovery_Table = register("discovery_table", 
-			() -> new DiscoveryTable(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.TERRACOTTA_WHITE)), 
+			() -> new DiscoveryTable(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.COLOR_BROWN)), 
 			object -> () -> new BlockItem(object.get(),new Item.Properties().tab(Techromancy.Techromancy_Tab)));
 	public static final RegistryObject<Block> Solidifier = register("solidifier", 
 			() -> new Solidifier(BlockBehaviour.Properties.of(Material.HEAVY_METAL, MaterialColor.TERRACOTTA_WHITE)), 

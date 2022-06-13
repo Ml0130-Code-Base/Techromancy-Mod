@@ -41,6 +41,7 @@ public class ModEnUsProvider extends LanguageProvider{
 		
 		//Ores and Ingots
 		add(ItemInit.Steel_Ingot.get(), "Steel Ingot");
+		add(ItemInit.Steel_Nugget.get(), "Steel Nugget");
 		
 
 		//Blocks

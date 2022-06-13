@@ -20,7 +20,6 @@ import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.ShovelItem;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tiers;
-import net.minecraftforge.event.RegistryEvent.Register;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -48,6 +47,8 @@ public class ItemInit {
 	
 	//Ores and Ingot
 	public static final RegistryObject<Item> Steel_Ingot = register("steel_ingot", 
+			() -> new Item(new Item.Properties().tab(Techromancy.Techromancy_Tab)));
+	public static final RegistryObject<Item> Steel_Nugget = register("steel_nugget", 
 			() -> new Item(new Item.Properties().tab(Techromancy.Techromancy_Tab)));
 
 	// Tool Registry

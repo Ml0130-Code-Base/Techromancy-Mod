@@ -6,7 +6,6 @@ import com.ml0130.techromancy.init.ItemInit;
 
 import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.server.packs.PackType;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
@@ -66,6 +65,7 @@ public class ModItemModelProvider extends ItemModelProvider{
 		simpleItem(ItemInit.Steel_Sword.get());
 		simpleItem(ItemInit.Glass_Leans.get());
 		simpleItem(ItemInit.Imbued_Glass_Leans.get());
+		simpleItem(ItemInit.Steel_Nugget.get());
 		
 	}
 
