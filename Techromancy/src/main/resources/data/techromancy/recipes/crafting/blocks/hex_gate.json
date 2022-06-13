@@ -1,13 +1,16 @@
 {
 	"type": "minecraft:crafting_shaped",
 		"pattern": [
-			"",
-			"",
-			""
+			" I ",
+			"IMI",
+			" I "
 		],
 		"key": {
-			"": {
-				"tag": "techromancy:"
+			"M": {
+				"item": "techromancy:solidified_mana"
+			},
+			"I": {
+				"item" : "techromancy:imbued_glass_leans"
 			}
 		},
 		"result": {
