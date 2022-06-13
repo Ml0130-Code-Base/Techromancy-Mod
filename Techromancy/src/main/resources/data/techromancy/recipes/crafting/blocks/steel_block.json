@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+		"pattern": [
+			"SSS",
+			"SSS",
+			"SSS"
+		],
+		"key": {
+			"S": {
+				"item": "techromancy:steel_ingot"
+			}
+		},
+		"result": {
+			"item": "techromancy:steel_block",
+			"count": 1
+		}
+}

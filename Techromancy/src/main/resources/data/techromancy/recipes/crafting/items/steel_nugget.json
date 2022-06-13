@@ -1,0 +1,14 @@
+{
+	"type" : "minecraft:crafting_shapeless",
+	"ingredients" : [
+		{
+			"item" : "techromancy:steel_ingot"
+		}
+	
+	],
+	"result" :	{
+		"item" : "techromancy:steel_nugget",
+		"count" : 9
+	}
+
+}
