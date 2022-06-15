@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+		"pattern": [
+			" S ",
+			" V ",
+			" V "
+		],
+		"key": {
+			"S": {
+				"item": "techromancy:solidified_mana"
+			},
+			"V": {
+				"item": "minecraft:stick"
+			}
+		},
+		"result": {
+			"item": "techromancy:steel_shovel",
+			"count": 1
+		}
+}

@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:crafting_shaped",
+		"pattern": [
+			"SS ",
+			"SV ",
+			" V "
+		],
+		"key": {
+			"S": {
+				"item": "techromancy:solidified_mana"
+			},
+			"V": {
+				"item": "minecraft:stick"
+			}
+		},
+		"result": {
+			"item": "techromancy:steel_axe",
+			"count": 1
+		}
+}
