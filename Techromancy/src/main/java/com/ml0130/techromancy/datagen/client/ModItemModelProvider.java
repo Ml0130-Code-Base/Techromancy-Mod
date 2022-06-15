@@ -46,6 +46,7 @@ public class ModItemModelProvider extends ItemModelProvider{
 		simpleBlockItem(BlockInit.Pressurized_Glass_Pipe.get().asItem()	);
 		simpleBlockItem(BlockInit.Steel_Block.get().asItem());
 		simpleBlockItem(BlockInit.Discovery_Table.get().asItem());
+		simpleBlockItem(BlockInit.Solidifier.get().asItem());
 		
 		//Items
 		simpleItem(ItemInit.Solidified_Mana.get());

@@ -20,8 +20,9 @@
 	
 	//Loclized Ores and Ingot Names
 	"item.techromancy.steel_ingot": "Steel Ingot",
+	"item.techromancy.steel_nugget": "Steel Nugget",
 	"block.techromancy.steel_block": "Steel Block",
-	"item.teachromancy.steel_nugget": "Steel Nugget",
+
 	
 	//Locilzed Block Names
 	"block.techromancy.hex_gate": "Hex Gate",
