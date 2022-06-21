@@ -2,9 +2,9 @@ package com.ml0130.techromancy.block.reserch;
 
 import net.minecraft.world.level.block.Block;
 
-public class Solidifier extends Block{
+public class EssenceStriper extends Block{
 
-	public Solidifier(Properties properties) {
+	public EssenceStriper(Properties properties) {
 		super(properties);
 		// TODO Auto-generated constructor stub
 	}

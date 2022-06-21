@@ -7,7 +7,7 @@ import com.ml0130.techromancy.Techromancy;
 import com.ml0130.techromancy.block.magic.HexGate;
 import com.ml0130.techromancy.block.magic.MysticSteamEngine;
 import com.ml0130.techromancy.block.reserch.DiscoveryTable;
-import com.ml0130.techromancy.block.reserch.Solidifier;
+import com.ml0130.techromancy.block.reserch.EssenceStriper;
 import com.ml0130.techromancy.block.steam.AdvancedSteamEngine;
 import com.ml0130.techromancy.block.steam.Compressor;
 import com.ml0130.techromancy.block.steam.PressurizedGlassPipe;
@@ -59,8 +59,8 @@ public class BlockInit {
 	public static final RegistryObject<Block> Discovery_Table = register("discovery_table", 
 			() -> new DiscoveryTable(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.COLOR_BROWN)), 
 			object -> () -> new BlockItem(object.get(),new Item.Properties().tab(Techromancy.Techromancy_Tab)));
-	public static final RegistryObject<Block> Solidifier = register("solidifier", 
-			() -> new Solidifier(BlockBehaviour.Properties.of(Material.HEAVY_METAL, MaterialColor.TERRACOTTA_WHITE)), 
+	public static final RegistryObject<Block> Essence_Striper = register("essence_striper", 
+			() -> new EssenceStriper(BlockBehaviour.Properties.of(Material.HEAVY_METAL, MaterialColor.TERRACOTTA_WHITE)), 
 			object -> () -> new BlockItem(object.get(),new Item.Properties().tab(Techromancy.Techromancy_Tab)));
 	
 	
