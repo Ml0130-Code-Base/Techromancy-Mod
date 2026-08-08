@@ -8,6 +8,8 @@ import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.data.recipes.ShapedRecipeBuilder;
+import net.minecraft.tags.TagKey;
+import net.minecraft.world.item.Item;
 
 public class ModRecipeProvider extends RecipeProvider{
 
@@ -18,6 +20,6 @@ public class ModRecipeProvider extends RecipeProvider{
 	@Override
 	protected void buildCraftingRecipes(Consumer<FinishedRecipe> consumer) {
 		ShapedRecipeBuilder.shaped(ItemInit.Solidified_Mana.get())
-			.define(null, null);
+			.define((Character) null, (TagKey<Item>) null);
 	}
 }
