@@ -1,7 +1,7 @@
 {
-	"variants":{
-		"":{
-			"model": "techromancy:blocks/hex_gate"
+	"variants": {
+		"": {
+			"model": "techromancy:block/hex_gate"
 		}
 	}
 }

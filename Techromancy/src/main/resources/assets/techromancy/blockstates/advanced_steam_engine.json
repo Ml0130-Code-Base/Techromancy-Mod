@@ -1,7 +1,7 @@
 {
-	"variants":{
-		"":{
-			"model": "techromancy:blocks/advanced_steam_engine"
+	"variants": {
+		"": {
+			"model": "techromancy:block/advanced_steam_engine"
 		}
-
+	}
 }
