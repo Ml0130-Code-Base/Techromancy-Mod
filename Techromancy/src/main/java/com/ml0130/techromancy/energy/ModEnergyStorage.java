@@ -38,6 +38,19 @@ public class ModEnergyStorage extends EnergyStorage {
 		energy = Math.max(0, Math.min(capacity, value));
 	}
 
+	/** Spends stored energy on internal work (a machine running). @return true if there was enough. */
+	public boolean consume(int amount) {
+		if (amount <= 0) {
+			return true;
+		}
+		if (energy < amount) {
+			return false;
+		}
+		energy -= amount;
+		onChanged.run();
+		return true;
+	}
+
 	@Override
 	public int receiveEnergy(int maxReceive, boolean simulate) {
 		int received = super.receiveEnergy(maxReceive, simulate);

@@ -43,7 +43,11 @@ Knowledge is split into two questions, one per research block:
 
 - **Scanner** → *"What is it?"* — identify/discover an item or block (required first step).
 - **Essence Striper** → *"What's it made of?"* — reveal its essence composition (gated behind identify).
-- **Discovery Table** → spend accumulated knowledge to **unlock** above-wooden content.
+- **Discovery Table** → a **tiered crafting multiblock**: the bigger/better the structure you build around
+  it, the higher its **tier**, and higher tiers can **craft better things** (Astral-Sorcery-altar style).
+  It's where research/essences pay off into actual crafted gear. _(decided — it's a crafting mechanic, not a "spend points to unlock" station)_
+  - Structure → tier detection is built; tier-gated **recipes + crafting** are the next step.
+  - **Tier 2** (starter): the table on a 3×3 **Steel Block** platform with a new **Research Pillar** on each corner. Tier 1 = the bare table. More tiers later.
 
 ```mermaid
 flowchart LR
@@ -57,6 +61,15 @@ flowchart LR
 
 Essence is obtainable **two ways**: strip an item (Essence Striper) **or** capture machine byproduct
 (see §5).
+
+**Late-game shortcut _(planned, research-gated)_:** a way to **scan + strip in one action**, so players
+deep into the game aren't repeating the two manual steps each time. Trivial on the data side (call
+`identify` then `revealComposition` together); the open choice is *delivery*:
+- an **upgraded handheld** (e.g. an "Analyzer" — one right-click does both), or
+- an **automated machine** (pulls items from an adjacent inventory and scans+strips them in bulk,
+  drawing FE power — ties into the tech/power side).
+
+It should itself be unlocked **late** via research (it's a reward, not a starter).
 
 ---
 
@@ -82,7 +95,12 @@ A small set of **primal** essences **combine into compounds**. Deducing combinat
 | **Mana** (Arcanum?) | stored charge / energy | raw magic |
 | **Life** (Anima?) | organics, fuel, growth | soul / the "-mancy" side |
 
-Naming vibe (Latin-ish vs plain English vs coined) is **TBD**. Count is **~6 leaning**, may grow.
+**Chosen names (mixed scheme):** grounded/tech essences stay plain, magical ones get arcane names →
+`heat`, `motion`, `metal`, `vapor`, `arcanum` (mana), `anima` (life/soul). Count ~6, may grow.
+
+**Reveal levels _(decided)_:** each essence in an item's profile is **surface** (revealed by a scan) or
+**deep** (only revealed by stripping at the Essence Striper). Items with any deep essence therefore need
+**both** a scan and a strip for the full breakdown.
 
 ### 4d. Example compounds & item decompositions _(illustrative)_
 
@@ -187,10 +205,16 @@ exactly which above-wooden things are scan-unlocked vs research-gated.
 ## 8. Build order
 
 - **Phase 0 — DONE:** FE generators — all three steam engines (issue #3). _Not yet compiled on a real machine._
-- **Phase 1 — IN PROGRESS:**
-  - _done (uncompiled):_ research-entry registry (`research/`) · team-based knowledge store (`ResearchSavedData`, Codec `SavedData`) · sharing commands (`/techromancy research ...`).
-  - _next:_ Scanner item that calls `identify(...)`, then wire one scan-unlock to a real recipe → smallest playable loop. Then client sync.
-- **Phase 2:** Essence registry (primals) + Essence Striper reveals composition.
+- **Phase 1 & 2 core — DONE (uncompiled):**
+  - research-entry registry (`research/`) · team-based knowledge store (`ResearchSavedData`, Codec `SavedData`) · sharing commands (`/techromancy research ...`).
+  - essence core (`essence/`): `Essence` + registry + `ModEssences` (starter set: heat, motion, metal, vapor, arcanum, anima) · universal `EssenceResolver` (explicit + fallback layers) · `EssenceProfile` with **surface (scan) vs deep (strip)** essences.
+  - **Scanner** item (`item/ScannerItem`): right-click block / off-hand item → `identify`, shows surface essences. **Essence Striper** (`block/reserch/EssenceStriper`): right-click with an identified item → reveals the full breakdown, marks composition known.
+  - _next:_ wire a scan-unlock to a real recipe (end-to-end gate) · lang entries · client sync (for GUI).
+- **Phase 2+:** tag + recipe-derivation resolver layers · Essence Striper as a machine (consumes item, draws power).
+- **Discovery Table (tiered crafting multiblock):**
+  - _done (uncompiled):_ core block + structure→tier detection (right-click reports tier) · new `ResearchPillar` block · Tier 2 = 3×3 Steel Block platform + 4 corner pillars.
+  - _next:_ tier-gated recipes (a recipe type keyed by tier) + the crafting interaction/GUI · more tiers.
+- **Late game:** research-gated **combined scan+strip** tool/machine (one action does both) — delivery TBD (upgraded handheld vs automated powered machine).
 - **Phase 3:** Byproduct emission + capture (collector → pipe → tanks), using the emission profiles.
 - **Phase 4:** Discovery Table research/unlock GUI.
 - **Phase 5:** Compounds, fuller essence set, and gate the Advanced/Mystic engines behind research.

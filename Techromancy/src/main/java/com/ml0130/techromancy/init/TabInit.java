@@ -32,6 +32,9 @@ public class TabInit {
 						output.accept(ItemInit.Steel_Ingot.get());
 						output.accept(ItemInit.Steel_Nugget.get());
 
+						// Research tools
+						output.accept(ItemInit.Scanner.get());
+
 						// Tools
 						output.accept(ItemInit.Solidified_Mana_Pickaxe.get());
 						output.accept(ItemInit.Solidified_Mana_Axe.get());
@@ -50,10 +53,12 @@ public class TabInit {
 						output.accept(BlockInit.Wooden_Steam_Engine.get());
 						output.accept(BlockInit.Advanced_Steam_Engine.get());
 						output.accept(BlockInit.Compressor.get());
+						output.accept(BlockInit.Smelter.get());
 						output.accept(BlockInit.Pressurized_Glass_Pipe.get());
 						output.accept(BlockInit.Steel_Block.get());
 						output.accept(BlockInit.Discovery_Table.get());
 						output.accept(BlockInit.Essence_Striper.get());
+						output.accept(BlockInit.Research_Pillar.get());
 					})
 					.build());
 }

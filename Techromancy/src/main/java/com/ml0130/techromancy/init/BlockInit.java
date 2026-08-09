@@ -7,9 +7,11 @@ import com.ml0130.techromancy.block.magic.HexGate;
 import com.ml0130.techromancy.block.magic.MysticSteamEngine;
 import com.ml0130.techromancy.block.reserch.DiscoveryTable;
 import com.ml0130.techromancy.block.reserch.EssenceStriper;
+import com.ml0130.techromancy.block.reserch.ResearchPillar;
 import com.ml0130.techromancy.block.steam.AdvancedSteamEngine;
 import com.ml0130.techromancy.block.steam.Compressor;
 import com.ml0130.techromancy.block.steam.PressurizedGlassPipe;
+import com.ml0130.techromancy.block.steam.Smelter;
 import com.ml0130.techromancy.block.steam.WoodenSteamEngine;
 
 import net.minecraft.world.item.BlockItem;
@@ -39,6 +41,8 @@ public class BlockInit {
 			AdvancedSteamEngine::new, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_GRAY).strength(3.0f));
 	public static final RegistryObject<Block> Compressor = register("compressor", Compressor::new,
 			BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_GRAY).strength(3.0f));
+	public static final RegistryObject<Block> Smelter = register("smelter", Smelter::new,
+			BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GRAY).strength(3.5f));
 	public static final RegistryObject<Block> Pressurized_Glass_Pipe = register("pressurized_glass_pipe",
 			PressurizedGlassPipe::new, BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_WHITE).strength(3.0f));
 
@@ -51,6 +55,8 @@ public class BlockInit {
 			BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BROWN).strength(2.0f));
 	public static final RegistryObject<Block> Essence_Striper = register("essence_striper", EssenceStriper::new,
 			BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_WHITE).strength(5.0f));
+	public static final RegistryObject<Block> Research_Pillar = register("research_pillar", ResearchPillar::new,
+			BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).strength(3.0f));
 
 	private static <T extends Block> RegistryObject<T> register(final String name,
 			final Function<BlockBehaviour.Properties, ? extends T> factory, final BlockBehaviour.Properties props) {

@@ -3,6 +3,7 @@ package com.ml0130.techromancy.init;
 import java.util.function.Function;
 
 import com.ml0130.techromancy.Techromancy;
+import com.ml0130.techromancy.item.ScannerItem;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ToolMaterial;
@@ -28,6 +29,9 @@ public class ItemInit {
 	// Ores and Ingot
 	public static final RegistryObject<Item> Steel_Ingot = register("steel_ingot", Item::new);
 	public static final RegistryObject<Item> Steel_Nugget = register("steel_nugget", Item::new);
+
+	// Research tools
+	public static final RegistryObject<Item> Scanner = register("scanner", ScannerItem::new);
 
 	// Tools (tool classes were removed in 1.21; tools are plain Items configured via Item.Properties)
 	public static final RegistryObject<Item> Solidified_Mana_Pickaxe = register("solidified_mana_pickaxe",

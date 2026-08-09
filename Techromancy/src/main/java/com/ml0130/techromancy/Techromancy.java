@@ -24,7 +24,8 @@ public class Techromancy {
 		BlockEntityInit.BLOCK_ENTITIES.register(modBusGroup);
 		TabInit.TABS.register(modBusGroup);
 
-		// Load the selection of research entries (§ research-and-essence-design.md).
+		// Load the essences + their default assignments, and the selection of research entries.
+		com.ml0130.techromancy.essence.ModEssences.init();
 		ModResearch.init();
 
 		// Research-sharing commands (/techromancy research invite|accept|decline|leave|status).

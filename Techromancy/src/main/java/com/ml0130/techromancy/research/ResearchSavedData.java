@@ -74,6 +74,10 @@ public class ResearchSavedData extends SavedData {
 		return team(player.getUUID()).hasResearched(id);
 	}
 
+	public boolean hasComposition(Player player, String id) {
+		return team(player.getUUID()).hasComposition(id);
+	}
+
 	/** Number of players currently sharing this player's team (at least 1). */
 	public int teamSize(Player player) {
 		UUID tid = teamId(player.getUUID());
@@ -118,6 +122,15 @@ public class ResearchSavedData extends SavedData {
 	/** Records that the player's team has completed research {@code id}. @return true if newly learned. */
 	public boolean completeResearch(Player player, String id) {
 		if (team(player.getUUID()).addResearch(id)) {
+			setDirty();
+			return true;
+		}
+		return false;
+	}
+
+	/** Records that the player's team now knows the full composition of {@code id}. @return true if newly learned. */
+	public boolean revealComposition(Player player, String id) {
+		if (team(player.getUUID()).addComposition(id)) {
 			setDirty();
 			return true;
 		}
