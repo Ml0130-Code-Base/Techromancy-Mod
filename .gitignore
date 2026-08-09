@@ -1,0 +1,32 @@
+# The actual mod project lives in Techromancy/ and has its own .gitignore.
+# This file keeps IDE/Gradle junk out of the repository ROOT.
+
+# Eclipse
+/.project
+/.classpath
+/.settings/
+/.metadata/
+bin/
+*.launch
+
+# IntelliJ IDEA
+/.idea/
+*.iml
+/out/
+
+# VS Code
+/.vscode/
+
+# Gradle / build output (root level)
+/.gradle/
+/build/
+
+# Forge run directory
+/run/
+
+# Stray Eclipse "workspace" folders
+/Techromancy Workspace/
+
+# OS files
+.DS_Store
+Thumbs.db
