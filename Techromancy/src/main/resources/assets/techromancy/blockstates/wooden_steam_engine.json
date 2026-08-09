@@ -1,6 +1,9 @@
 {
 	"variants": {
-		"": {
+		"lit=false": {
+			"model": "techromancy:block/wooden_steam_engine"
+		},
+		"lit=true": {
 			"model": "techromancy:block/wooden_steam_engine"
 		}
 	}

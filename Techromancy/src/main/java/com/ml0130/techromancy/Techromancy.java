@@ -1,5 +1,6 @@
 package com.ml0130.techromancy;
 
+import com.ml0130.techromancy.init.BlockEntityInit;
 import com.ml0130.techromancy.init.BlockInit;
 import com.ml0130.techromancy.init.ItemInit;
 import com.ml0130.techromancy.init.TabInit;
@@ -17,6 +18,7 @@ public class Techromancy {
 
 		ItemInit.ITEMS.register(modBusGroup);
 		BlockInit.BLOCKS.register(modBusGroup);
+		BlockEntityInit.BLOCK_ENTITIES.register(modBusGroup);
 		TabInit.TABS.register(modBusGroup);
 	}
 }

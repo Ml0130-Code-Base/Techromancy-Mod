@@ -1,6 +1,9 @@
 {
 	"variants": {
-		"": {
+		"lit=false": {
+			"model": "techromancy:block/mystic_steam_engine"
+		},
+		"lit=true": {
 			"model": "techromancy:block/mystic_steam_engine"
 		}
 	}
