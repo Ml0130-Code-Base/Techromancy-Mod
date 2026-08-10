@@ -18,8 +18,8 @@ public class ItemInit {
 	// Magic Items
 	public static final RegistryObject<Item> Solidified_Mana = register("solidified_mana", Item::new);
 	public static final RegistryObject<Item> Imbued_Gear = register("imbued_gear", Item::new);
-	public static final RegistryObject<Item> Imbued_Glass_Leans = register("imbued_glass_leans", Item::new);
-	public static final RegistryObject<Item> Glass_Leans = register("glass_leans", Item::new);
+	public static final RegistryObject<Item> Imbued_Glass_Lens = register("imbued_glass_leans", Item::new);
+	public static final RegistryObject<Item> Glass_Lens = register("glass_leans", Item::new);
 
 	// Steam Items
 	public static final RegistryObject<Item> Wooden_Gear = register("wooden_gear", Item::new);

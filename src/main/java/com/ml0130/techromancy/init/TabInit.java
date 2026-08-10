@@ -20,8 +20,8 @@ public class TabInit {
 						// Magic items
 						output.accept(ItemInit.Solidified_Mana.get());
 						output.accept(ItemInit.Imbued_Gear.get());
-						output.accept(ItemInit.Imbued_Glass_Leans.get());
-						output.accept(ItemInit.Glass_Leans.get());
+						output.accept(ItemInit.Imbued_Glass_Lens.get());
+						output.accept(ItemInit.Glass_Lens.get());
 
 						// Steam items
 						output.accept(ItemInit.Wooden_Gear.get());
@@ -57,7 +57,7 @@ public class TabInit {
 						output.accept(BlockInit.Pressurized_Glass_Pipe.get());
 						output.accept(BlockInit.Steel_Block.get());
 						output.accept(BlockInit.Discovery_Table.get());
-						output.accept(BlockInit.Essence_Striper.get());
+						output.accept(BlockInit.Essence_Stripper.get());
 						output.accept(BlockInit.Research_Pillar.get());
 					})
 					.build());

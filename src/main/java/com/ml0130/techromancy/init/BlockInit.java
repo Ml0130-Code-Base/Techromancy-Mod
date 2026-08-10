@@ -6,7 +6,7 @@ import com.ml0130.techromancy.Techromancy;
 import com.ml0130.techromancy.block.magic.HexGate;
 import com.ml0130.techromancy.block.magic.MysticSteamEngine;
 import com.ml0130.techromancy.block.reserch.DiscoveryTable;
-import com.ml0130.techromancy.block.reserch.EssenceStriper;
+import com.ml0130.techromancy.block.reserch.EssenceStripper;
 import com.ml0130.techromancy.block.reserch.ResearchPillar;
 import com.ml0130.techromancy.block.steam.AdvancedSteamEngine;
 import com.ml0130.techromancy.block.steam.Compressor;
@@ -50,10 +50,10 @@ public class BlockInit {
 	public static final RegistryObject<Block> Steel_Block = register("steel_block", Block::new,
 			BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_WHITE).strength(5.0f));
 
-	// Reserch Blocks
+	// Research Blocks
 	public static final RegistryObject<Block> Discovery_Table = register("discovery_table", DiscoveryTable::new,
 			BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BROWN).strength(2.0f));
-	public static final RegistryObject<Block> Essence_Striper = register("essence_striper", EssenceStriper::new,
+	public static final RegistryObject<Block> Essence_Stripper = register("essence_striper", EssenceStripper::new,
 			BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_WHITE).strength(5.0f));
 	public static final RegistryObject<Block> Research_Pillar = register("research_pillar", ResearchPillar::new,
 			BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).strength(3.0f));

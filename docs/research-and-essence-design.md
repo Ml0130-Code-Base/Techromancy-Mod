@@ -229,7 +229,7 @@ exactly which above-wooden things are scan-unlocked vs research-gated.
 - **Phase 1 & 2 core — DONE (uncompiled):**
   - research-entry registry (`research/`) · team-based knowledge store (`ResearchSavedData`, Codec `SavedData`) · sharing commands (`/techromancy research ...`).
   - essence core (`essence/`): `Essence` + registry + `ModEssences` (starter set: heat, motion, metal, vapor, arcanum, anima) · universal `EssenceResolver` (explicit + fallback layers) · `EssenceProfile` with **surface (scan) vs deep (strip)** essences.
-  - **Scanner** item (`item/ScannerItem`): right-click block / off-hand item → `identify`, shows surface essences. **Essence Striper** (`block/reserch/EssenceStriper`): right-click with an identified item → reveals the full breakdown, marks composition known.
+  - **Scanner** item (`item/ScannerItem`): right-click block / off-hand item → `identify`, shows surface essences. **Essence Stripper** (`block/reserch/EssenceStripper`): right-click with an identified item → reveals the full breakdown, marks composition known.
   - _next:_ wire a scan-unlock to a real recipe (end-to-end gate) · lang entries · client sync (for GUI).
 - **Phase 2+:** tag + recipe-derivation resolver layers · Essence Striper as a machine (consumes item, draws power).
 - **Discovery Table (tiered crafting multiblock):**

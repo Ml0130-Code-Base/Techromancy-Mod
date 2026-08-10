@@ -16,7 +16,6 @@
 	"item.techromancy.imbued_gear": "Imbued Gear",
 	"item.techromancy.glass_leans": "Glass Leans",
 	"item.techromancy.imbued_glass_leans": "Imbued Glass Leans",
-	"item.techromancy.hex_gate": "Hex Gate",
 
 	"item.techromancy.steel_ingot": "Steel Ingot",
 	"item.techromancy.steel_nugget": "Steel Nugget",
@@ -24,7 +23,7 @@
 	"item.techromancy.scanner": "Scanner",
 
 	"block.techromancy.steel_block": "Steel Block",
-	"block.techromancy.hex_gate": "Hex Gate",
+	"item.techromancy.hex_gate": "Hex Gate",
 	"block.techromancy.wooden_steam_engine": "Wooden Steam Engine",
 	"block.techromancy.advanced_steam_engine": "Advanced Steam Engine",
 	"block.techromancy.mystic_steam_engine": "Mystic Steam Engine",

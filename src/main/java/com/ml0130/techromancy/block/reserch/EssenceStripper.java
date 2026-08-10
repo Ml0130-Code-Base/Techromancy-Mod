@@ -20,14 +20,14 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 
 /**
- * Essence Striper: right-click it holding an item to reveal what the item is made of. The item must be
+ * Essence Stripper: right-click it holding an item to reveal what the item is made of. The item must be
  * {@linkplain ResearchSavedData#hasIdentified identified} first (scan it). Stripping reveals the FULL
  * breakdown, including "deep" essences that scanning alone cannot show. (For now it only reveals - a
  * later pass turns it into a machine that consumes the item and draws power.)
  */
-public class EssenceStriper extends Block {
+public class EssenceStripper extends Block {
 
-	public EssenceStriper(Properties properties) {
+	public EssenceStripper(Properties properties) {
 		super(properties);
 	}
 
