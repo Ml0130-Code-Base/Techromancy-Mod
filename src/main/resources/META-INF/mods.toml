@@ -1,0 +1,24 @@
+modLoader="javafml"
+loaderVersion="[61,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="techromancy"
+version="1.0.0"
+displayName="Techromancy"
+authors="ml0130 and Essidies"
+description='''Fuse steam-powered technology with arcane magic.'''
+
+[[dependencies.techromancy]]
+    modId="forge"
+    mandatory=true
+    versionRange="[61,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.techromancy]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.21.11,1.22,)"
+    ordering="NONE"
+    side="BOTH"

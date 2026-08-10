@@ -53,6 +53,11 @@ public class ResearchSavedData extends SavedData {
 		return server.overworld().getDataStorage().computeIfAbsent(TYPE);
 	}
 
+	/** Convenience accessor from a player (call server-side, where the level's server is non-null). */
+	public static ResearchSavedData get(Player player) {
+		return get(player.level().getServer());
+	}
+
 	// --- team resolution -----------------------------------------------------
 
 	private UUID teamId(UUID player) {

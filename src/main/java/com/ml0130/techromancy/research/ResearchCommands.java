@@ -83,7 +83,7 @@ public final class ResearchCommands {
 			return 0;
 		}
 		PENDING.remove(accepter.getUUID());
-		ResearchSavedData.get(accepter.getServer()).share(inviter.getUUID(), accepter.getUUID());
+		ResearchSavedData.get(accepter).share(inviter.getUUID(), accepter.getUUID());
 		ctx.getSource().sendSuccess(
 				() -> Component.literal("You now share research with " + inviter.getName().getString() + "."), false);
 		inviter.sendSystemMessage(
@@ -101,7 +101,7 @@ public final class ResearchCommands {
 
 	private static int leave(CommandContext<CommandSourceStack> ctx) throws CommandSyntaxException {
 		ServerPlayer player = ctx.getSource().getPlayerOrException();
-		ResearchSavedData.get(player.getServer()).leave(player.getUUID());
+		ResearchSavedData.get(player).leave(player.getUUID());
 		ctx.getSource().sendSuccess(
 				() -> Component.literal("You left your research team (you kept everything you already knew)."), false);
 		return 1;
@@ -109,7 +109,7 @@ public final class ResearchCommands {
 
 	private static int status(CommandContext<CommandSourceStack> ctx) throws CommandSyntaxException {
 		ServerPlayer player = ctx.getSource().getPlayerOrException();
-		ResearchSavedData data = ResearchSavedData.get(player.getServer());
+		ResearchSavedData data = ResearchSavedData.get(player);
 		int size = data.teamSize(player);
 		int identified = data.identifiedCount(player);
 		int researched = data.researchedCount(player);

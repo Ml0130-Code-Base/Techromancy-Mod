@@ -167,6 +167,27 @@ Consequences: higher-tier engines matter for *magic*, not just FE; and "what fue
 a real optimization. To get rare/complex essences for deep research, you need better engines + better
 fuel — which are themselves research-gated. The loop closes on itself.
 
+### 5b. Essence augmentation — feeding essence back into machines _(decided)_
+
+The other half of the loop: **once upgraded, a tech machine can DRAW essences from surrounding essence
+storage (tanks) and consume specific essence types for specific bonuses.** So machines emit essence
+(§5a) → you capture it in tanks → you feed it back into upgraded machines → they run better → emit more.
+Self-reinforcing.
+
+- **Per-machine essence → bonus** (each block reads different essences for different upgrades):
+  - **Smelter** ← **Heat** + **Motion** → better speed / processing throughput.
+  - **Engines** ← **Motion** + **Arcanum** (its tech face = "electricity"/stored charge) → speed / better fuel→FE conversion.
+  - (Other machines define their own essence→bonus map.)
+- **Gated by upgrade:** only an **upgraded** machine draws essence (ties to the upgrade system — leaning: GUI upgrade slots).
+- Essence is **consumed over time** while the bonus is active (a running buff, not a permanent unlock).
+
+**Depends on (must exist first):**
+1. an **essence-storage capability** (`IEssenceStorage`-style, per-essence-type amounts) — a custom cap since essence isn't a Forge standard;
+2. an **essence tank / storage block** that exposes it (also the sink for §5 byproduct capture);
+3. the **machine upgrade system**.
+
+**Note:** "electricity" = **Arcanum** (its tech face is "stored charge") — it was stand-in wording, not a separate essence.
+
 ---
 
 ## 6. Architecture notes (implementation-facing)

@@ -42,7 +42,7 @@ public class EssenceStriper extends Block {
 		}
 		if (!level.isClientSide()) {
 			String id = BuiltInRegistries.ITEM.getKey(stack.getItem()).toString();
-			ResearchSavedData data = ResearchSavedData.get(player.getServer());
+			ResearchSavedData data = ResearchSavedData.get(player);
 			if (!data.hasIdentified(player, id)) {
 				player.displayClientMessage(Component.literal("Scan this with a Scanner first to identify it."), true);
 				return InteractionResult.SUCCESS;

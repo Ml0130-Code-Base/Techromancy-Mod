@@ -61,7 +61,7 @@ public class ScannerItem extends Item {
 	}
 
 	private static void scan(Player player, String id) {
-		ResearchSavedData data = ResearchSavedData.get(player.getServer());
+		ResearchSavedData data = ResearchSavedData.get(player);
 		boolean isNew = data.identify(player, id);
 		EssenceProfile profile = EssenceResolver.resolve(id);
 		List<EssenceEntry> surface = profile.surface();
