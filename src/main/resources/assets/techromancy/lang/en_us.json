@@ -34,6 +34,10 @@
 	"item.techromancy.essence_striper": "Essence Stripper",
 	"item.techromancy.research_pillar": "Research Pillar",
 
+	"block.techromancy.wooden_steam_engine": "Wooden Steam Engine",
+	"block.techromancy.advanced_steam_engine": "Advanced Steam Engine",
+	"block.techromancy.mystic_steam_engine": "Mystic Steam Engine",
+
 	"essence.techromancy.heat": "Heat",
 	"essence.techromancy.heat.tech": "Combustion & steam",
 	"essence.techromancy.heat.magic": "Elemental fire",

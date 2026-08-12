@@ -1,7 +1,7 @@
 package com.ml0130.techromancy.block.steam;
 
 import net.minecraft.core.BlockPos;
-import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -49,34 +49,26 @@ public abstract class AbstractSteamEngineBlock extends Block implements EntityBl
 				: null;
 	}
 
-	// Right-click with fuel in hand -> load it into the engine.
+	// Right-click (with or without an item) opens the engine's GUI; sneak to allow normal block placement.
 	@Override
 	protected InteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player,
 			InteractionHand hand, BlockHitResult hit) {
-		int burn = level.fuelValues().burnDuration(stack);
-		if (burn <= 0) {
+		if (player.isSecondaryUseActive()) {
 			return InteractionResult.PASS;
 		}
-		if (!level.isClientSide()) {
-			if (level.getBlockEntity(pos) instanceof AbstractSteamEngineBlockEntity engine) {
-				engine.addFuel(burn);
-				if (!player.getAbilities().instabuild) {
-					stack.shrink(1);
-				}
-			}
-		}
-		return InteractionResult.SUCCESS;
+		return openMenu(level, pos, player);
 	}
 
-	// Right-click with an empty hand -> report the stored energy in the action bar.
 	@Override
 	protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player,
 			BlockHitResult hit) {
-		if (!level.isClientSide()) {
-			if (level.getBlockEntity(pos) instanceof AbstractSteamEngineBlockEntity engine) {
-				player.displayClientMessage(Component.literal(engine.getEnergyStored() + " / "
-						+ engine.getMaxEnergyStored() + " FE" + (engine.isLit() ? " (running)" : " (idle)")), true);
-			}
+		return openMenu(level, pos, player);
+	}
+
+	private static InteractionResult openMenu(Level level, BlockPos pos, Player player) {
+		if (!level.isClientSide() && player instanceof ServerPlayer serverPlayer
+				&& level.getBlockEntity(pos) instanceof AbstractSteamEngineBlockEntity engine) {
+			serverPlayer.openMenu(engine, buf -> buf.writeBlockPos(pos));
 		}
 		return InteractionResult.SUCCESS;
 	}

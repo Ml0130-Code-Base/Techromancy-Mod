@@ -1,0 +1,10 @@
+Starting a Gradle Daemon (subsequent builds will be faster)
+Parallel Configuration Cache is an incubating feature.
+Configuration on demand is an incubating feature.
+Calculating task graph as no cached configuration is available for tasks: build .classpath .git .gitattributes .github .gitignore .gradle .idea .project .settings build build-output.txt build.gradle changelog.txt docs gradle gradle.properties gradlew gradlew.bat LICENSE.txt README.md run run-data runClient.launch runData.launch runGameTestServer.launch runServer.launch runTestClient.launch runTestData.launch runTestGameTestServer.launch runTestServer.launch settings.gradle src
+
+> Configure project :
+Minecraft Maven is up-to-date, took 0:03.294
+
+[Incubating] Problems report is available at: file:///C:/Dev/Techromancy-Mod/build/reports/problems/problems-report.html
+Configuration cache entry stored.

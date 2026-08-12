@@ -3,12 +3,15 @@ package com.ml0130.techromancy;
 import com.ml0130.techromancy.init.BlockEntityInit;
 import com.ml0130.techromancy.init.BlockInit;
 import com.ml0130.techromancy.init.ItemInit;
+import com.ml0130.techromancy.init.MenuInit;
 import com.ml0130.techromancy.init.TabInit;
 import com.ml0130.techromancy.research.ModResearch;
 import com.ml0130.techromancy.research.ResearchCommands;
 
+import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.event.RegisterCommandsEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.loading.FMLEnvironment;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod("techromancy")
@@ -22,7 +25,13 @@ public class Techromancy {
 		ItemInit.ITEMS.register(modBusGroup);
 		BlockInit.BLOCKS.register(modBusGroup);
 		BlockEntityInit.BLOCK_ENTITIES.register(modBusGroup);
+		MenuInit.MENUS.register(modBusGroup);
 		TabInit.TABS.register(modBusGroup);
+
+		// Client-only screen wiring (guarded so the dedicated server never loads client classes).
+		if (FMLEnvironment.dist == Dist.CLIENT) {
+			com.ml0130.techromancy.client.TechromancyClient.register(modBusGroup);
+		}
 
 		// Load the essences + their default assignments, and the selection of research entries.
 		com.ml0130.techromancy.essence.ModEssences.init();
